@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="catalogo.css">
+    <title>GAMES</title>
+</head>
+
+<body>
+    <div class="cabecalho">
+        <header>
+            <h1 class="titulo">GAMES_</h1>
+        </header>
+        <div class="profile">
+            <img src="images/controle.png">
+        </div>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="#acao">AÇÃO</a>
+            </li>
+            <li>
+                <a href="#aventura">AVENTURA</a>
+            </li>
+            <li>
+                <a href="#tiro">TIRO</a>
+            </li>
+            <li>
+                <a href="#rpg">RPG</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="tipos">
+        
+        <div class="tipo">
+            <h2 class="tipo-titulo">AÇÃO_</h2>
+            <ul id="acao">
+                <li>God of War</li>
+                <li>Devil May Cry</li>
+                <li>The Last Of Us</li>
+            </ul>
+        </div>
+
+        <div class="tipo">
+                <h2 class="tipo-titulo">AVENTURA_</h2>
+            <ul id="aventura">
+                <li>Uncharted</li>
+                <li>Tomb Raider</li>
+                <li>Zelda: Breath Of The Wild</li>
+            </ul>
+        </div>
+
+        <div class="tipo">
+                <h2 class="tipo-titulo">TIRO_</h2>
+            <ul id="tiro">
+                <li>Fortnite</li>
+                <li>Free Fire</li>
+                <li>Call of Duty</li>
+            </ul>
+        </div>
+
+        <div class="tipo">
+                <h2 class="tipo-titulo">RPG_</h2>
+            <ul id="rpg">
+                <li>Dragon Age: Inquisition</li>
+                <li>Skyrim</li>
+                <li>Dragon's Dogma</li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <script>
+        const titulo = document.querySelector('h1');
+
+        function typeWriter(elemento) {
+            const textoArray = elemento.innerHTML.split('');
+            elemento.innerHTML = '';
+            textoArray.forEach((letra, i) => {
+                setTimeout(() => elemento.innerHTML += letra, 120 * i);
+                console.log(i);
+            })
+            console.log(textoArray);
+
+        }
+
+        typeWriter(titulo);
+
+        console.log(titulo);
+    </script>
+</body>
+
+</html>

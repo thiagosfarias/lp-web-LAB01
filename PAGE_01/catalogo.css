@@ -1,0 +1,93 @@
+.cabecalho{
+ 
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding-bottom:50px;
+    border-bottom: solid;
+    border-top: solid;
+    color: azure;
+
+}
+
+.profile img{
+    width: 250px;
+    height: 240px;
+}
+
+.titulo{
+    font-size: 60px;
+}
+
+body{
+    width: auto;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.menu{
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 120%;
+    float:left;
+    text-align: center;
+   
+}
+
+.menu li{
+    font-size: 23px;
+    position:relative; 
+    float:left;
+    padding-left: 10px;
+    padding-right: 123px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    margin-left: 70px;
+    margin-right: 75px;
+    font-weight: bold;
+}
+
+.menu a{
+    font-size: 23px;
+    text-decoration: none;
+    color: azure;
+    padding-left: 5px;
+}
+
+.menu a:hover{
+    color:green;
+}
+
+.tipos{
+    display: block;
+    padding-top: 70px;
+}
+
+.tipo{
+    margin-bottom: 80px;
+    margin-top: 80px;
+    box-shadow: 0 4px 8px 0 azure;
+    transition: 0.2s;
+}
+
+.tipo:hover{
+    box-shadow: 0 8px 16px 0 green;
+}
+
+.tipo li{
+    list-style: none;
+    color:azure;
+    padding-top:10px;
+    padding-bottom: 15px;
+}
+
+.tipo-titulo{
+    font-size: 23px;
+    color: azure;
+    text-align: start;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+
