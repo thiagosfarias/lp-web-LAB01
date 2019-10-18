@@ -2,12 +2,11 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left: 150px;
     margin-right: 150px;
+    background-image: url(images/back-slz.jpg);
+    
 }
 
-.cabecalho{
-    padding-top: 15px;
-    background-color: white;
-}
+
 
 .info{
 	margin-bottom: 40px;
@@ -23,7 +22,7 @@ body{
 }
 
 .titulo{
-    font-size: 56px;
+    font-size: 60px;
     text-align: center;
     margin-top: -111px;
     margin-bottom: 106px;
@@ -31,7 +30,7 @@ body{
 }
 
 .titulo:hover{
-    font-size: 60px;
+    font-size: 65px;
 }
 
 
@@ -47,10 +46,6 @@ body{
     padding-right: 20px;
 }
 
-.azuleijos{
-    width: 190px;
-    height: 150px;
-}
 
 .foto-slz{
     width: 200px;
@@ -86,4 +81,44 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.info-lista::before{
+    content: ' ';
+    background: #1C3680;
+    display: inline-block;
+    position: absolute;
+    left: 194px;
+    width: 4px;
+    height: 57%;
+    z-index: 400;
+    border-radius: 15px;
+}
+
+li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #1C3680;
+    left: 188px;
+    width: 10px;
+    height: 11px;
+    z-index: 400;
+}
+
+li:before:hover{
+    background:  #1C3680;
+}
+
+.titulo-cidade{
+    padding-top: 35px;
+    font-size: 194%;
+    padding-left: 40px;
+    transition: .3s;
+}
+
+.titulo-cidade:hover{
+    font-size: 40px;
 }
